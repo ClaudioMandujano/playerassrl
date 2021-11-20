@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var nodemailer = require("nodemailer");
 
 require('dotenv').config();
 
@@ -16,6 +17,7 @@ var serviciosRouter = require('./routes/servicios');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+
 const { allowedNodeEnvironmentFlags } = require('process');
 
 
@@ -66,6 +68,12 @@ app.use('/servicios',serviciosRouter);
 app.use('/contacto',contactoRouter);
 app.use('/admin/login',loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+
+app.post("/send-email", (req, res)=>{
+  console.log("Email enviado")
+})
+
+
 
 
 app.get('/prueba', function(req, res, next){

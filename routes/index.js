@@ -5,9 +5,11 @@ var novedadesModel = require('../models/novedadesModel');
 var cloudinary = require('cloudinary').v2;
 
 
+
+
 router.get('/', async function(req, res, next){
   novedades = await novedadesModel.getNovedades();
-  novedades = novedades.splice(0,5); //Seleccionar los primeros 5 elementos del array
+  novedades = novedades.splice(0,50); //Seleccionar la cantidad de elementos del array
   
   novedades = novedades.map(novedad => { //map genera nuevo array en base a la info que obtiene
       if(novedad.img_id){
@@ -39,5 +41,8 @@ router.get('/', function(req, res, next) {
   })
   res.render('index');
 });
+
+
+
 
 module.exports = router;
