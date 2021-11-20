@@ -1,0 +1,150 @@
+
+      
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-2">            
+          
+          <h1>DÍA DE LA MADRE</h1>
+             <h4>Estilo único. En la cancha, en el gimnasio o en casa</h4>
+        </div>
+    </div> 
+
+<!-- FIN NAVBAR -->
+<!--METODOS DE COMPRA -->      
+<div class="benefit">
+  <div class="container">
+    <div class="row benefit_row">
+      <div class="col-lg-3 benefit_col">
+        <div class="benefit_item d-flex flex-row align-items-center">
+          <div class="benefit_icon">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+          </div>
+          <div class="benefit_content">
+            <h6>Ventas</h6>
+            <p>Solo en local</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 benefit_col">
+        <div class="benefit_item d-flex flex-row align-items-center">
+          <div class="benefit_icon">
+            <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
+          <div class="benefit_content">
+            <h6>45 Dias</h6>
+            <p>Devoluciones y Reembolsos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 benefit_col">
+        <div class="benefit_item d-flex flex-row align-items-center">
+          <div class="benefit_icon">
+            <i class="fa fa-money" aria-hidden="true"></i>
+          </div>
+          <div class="benefit_content">
+            <h6>PAGO EN EFECTIVO </h6>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 benefit_col">
+        <div class="benefit_item d-flex flex-row align-items-center">
+          <div class="benefit_icon">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </div>
+          <div class="benefit_content">
+            <h6>Horario</h6>
+            <p>8AM - 9PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN METODOS --->
+<!-- Banner -->
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_1.jpg);">
+							<div class="banner_categoria">
+								<a href="#">Mujer</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_2.jpg);">
+							<div class="banner_categoria">
+								<a href="#">Accesorios</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_3.jpg);">
+							<div class="banner_categoria">
+								<a href="#">Hombre</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- FIN DE SERVICIOS -->
+
+
+ <!-- NOVEDADES Grid-->
+        <section class="gridpage-section bg-light" id="portfolio">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="section-heading text-uppercase mt-5">Novedades</h2>
+              <h3 class="section-subheading text-muted">Lo ultimo en tendencia</h3>
+            </div>             
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-evenly">
+              {{#each novedades}}             
+              <div class="col g-col-6 g-col-md-4" style="max-width: 15rem;">
+                <!-- GRID item -->
+                <div class="card h-100 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#staticBackdrop{{ id }}">
+                    <div class="portfolio-hover ">
+                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                     <img src="{{imagen}}" class="card-img-top" width="100">
+                  </a>
+                  <div class="card-body portfolio-caption">
+                    <div class="card-title portfolio-caption-heading">{{titulo}}</div>
+                    <div class="card_text portfolio-caption-subheading text-muted mt-2">{{subtitulo}}</div>
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+            </div>            
+          </div>
+        </section>
+        
+        {{#each novedades}}
+        <!-- Modal -->
+        <div class="modal fade portfolio-modal text-center" id="staticBackdrop{{ id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">{{titulo}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h1>{{id}}</h1>
+                <img src="{{imagen}}">
+                <h2>{{ subtitulo }}</h2>
+                <p>{{ cuerpo }}</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>    
+         {{/each}}   
+        </div>
