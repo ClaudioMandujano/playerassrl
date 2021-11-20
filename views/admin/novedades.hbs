@@ -8,16 +8,17 @@
 
 
 <div class="row">
-    <div class="col-7">
+    <div class="col-5 col-sm ">
         <h3>Listado de Novedades</h3>
     </div>
-    <div class="col-2 text-right">
-        <a href="/admin/novedades/agregar" class="btn btn-success"> <i class="fa fa-plus"></i>Nuevo</a>
+    <div class="col col-sm text-right">
+        <a href="/admin/novedades/agregar" class="btn btn-success">
+        <i class="fa fa-plus"></i>Nuevo</a>
     </div>
-    <div class="col-3">
-        <form class="form-inline my-2 my-lg-0" action="/admin/novedades" method="get">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}"{{/if}}>
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>        
+    <div class="col-3 col-sm  ">
+        <form class="form-inline my-2 my-lg-0 d-grid gap-2 d-md-flex justify-content-md-end " action="/admin/novedades" method="get">
+            <input class="form-control "  style="width:200px" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}"{{/if}}>
+            <button class="btn btn-secondary btn-sm" style="width:50px" type="submit"><i class="fa fa-search"></i></button>        
         </form>
         {{#if is_search}}
         {{#unless novedades.length}}
@@ -54,7 +55,7 @@
       </table>
     </div>
 </div>
-</div>
+
 
 
   
