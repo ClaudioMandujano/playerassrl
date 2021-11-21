@@ -46,7 +46,7 @@ a,a:hover, a:active, a:link{
     background-size: cover;
     height: 40vh;
     min-height: 600px;
-    color: white;
+    color: #ffffff;
 }
 
 /* BANNER */
@@ -230,20 +230,20 @@ a,a:hover, a:active, a:link{
    display: grid;
    place-content: center;
     margin: 1rem;
-    max-width: 100vw;    
+    max-width: 100vw;      
   }
   .portfolio-modal .modal-content {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
   }
   
   .portfolio-modal .close-modal {
     position:absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    top: 1rem;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
     cursor: pointer;
     background-color: transparent;
     
@@ -251,6 +251,110 @@ a,a:hover, a:active, a:link{
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
+
+/* OFERTA CONTADOR */
+.descuento{
+  margin: 50px;
+}
+
+.descuentofoto{
+  min-width: 100%;
+  height: 100%;
+  background-color: #fe4c50;
+}
+
+.descuentotexto{
+
+  background-color: #d1d0d0;
+  height: 100%;
+  padding: 75px 90px 50px;
+  text-align: center;
+}
+
+.descuentotexto a{
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding: 0 0 3px;
+  display: inline-block;
+}
+
+.descuentotexto .descuentotitulo{
+text-align: center;
+position: relative;
+z-index: 1;
+margin-bottom: 60px;
+}
+.descuentotexto .descuentotitulo:after{
+content: '';
+position: absolute;
+left: 50%;
+top: -38px;
+height: 183px;
+width: 183px;
+background-color: #f4f4f4;
+z-index: -1;
+margin-left: -90px;
+}
+
+.descuentotexto .descuentotitulo span{
+ font-size: 20px;
+ color: #000;
+ font-weight: 500;
+ text-transform: uppercase;
+
+}
+.descuentotexto .descuentotitulo h2{
+ font-size: 55px;
+ color: #fe4c50;
+ margin-bottom: 10px;
+}
+.descuentotexto .descuentotitulo h5{
+  color: #fe4c50;
+  font-weight: 700;
+}
+.descuentotexto .descuentotitulo h5 span{
+ font-size: 22px;
+ color: #000;
+ margin-right: 5px;
+}
+.timer{   
+  margin-bottom: 15px;   
+  width: 380px; 
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+
+.time{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+}
+.label{
+color: #000;
+margin-left: 10px;
+margin-bottom: 0;
+display: inline-block;
+font-weight: 500;
+
+}
+
+/*
+.timer span{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+
+}
+*/
+
 /*SUBSCRIPCION */
 .newsletter{
   width: 100;
