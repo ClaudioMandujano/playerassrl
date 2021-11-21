@@ -335,6 +335,7 @@ margin-left: -90px;
   font-weight: 700;
   color: #000;
   display: inline-block;
+  margin-top: 50px;
 }
 .label{
 color: #000;
@@ -342,6 +343,7 @@ margin-left: 10px;
 margin-bottom: 0;
 display: inline-block;
 font-weight: 500;
+margin-top: 50px;
 
 }
 
@@ -425,6 +427,38 @@ font-weight: 500;
   background: #fe7c7f;
 }
  
+/* WEB NOSOTROS*/
+
+.hero2{
+  background: url(../images/hero2.jpg) no-repeat;
+  margin-top: 80px;
+  background-size: cover;
+  height: 40vh;
+  min-height: 600px;
+  color: #ffffff;
+}
+
+.vision{
+  display: flex;
+  justify-content: center;
+}
+
+.vision h2{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.vision p{
+  font-size: 18px;
+  text-align: left;
+  margin: 2px;
+  line-height: normal;
+}
+
+
+
+
+
+
 
 /*FOOTER */
 .footer{
