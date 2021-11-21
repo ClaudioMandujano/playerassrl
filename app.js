@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var nodemailer = require("nodemailer");
+
 
 require('dotenv').config();
 
@@ -13,7 +13,6 @@ var fileUpload = require('express-fileupload');
 
 var indexRouter = require('./routes/index');
 var nosotrosRouter = require('./routes/nosotros');
-var serviciosRouter = require('./routes/servicios');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
@@ -64,7 +63,6 @@ app.use(fileUpload({
 
 app.use('/', indexRouter);
 app.use('/nosotros',nosotrosRouter);
-app.use('/servicios',serviciosRouter);
 app.use('/contacto',contactoRouter);
 app.use('/admin/login',loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
