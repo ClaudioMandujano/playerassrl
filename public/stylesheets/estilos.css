@@ -42,11 +42,19 @@ a,a:hover, a:active, a:link{
 } 
 
 .hero{
-    background: url(../images/slider_1.jpg) no-repeat;
+    background: url(../images/hero3.jpg) no-repeat;
     background-size: cover;
     height: 40vh;
     min-height: 600px;
     color: #ffffff;
+}
+
+.texthero h1, h4{
+  color: #000;  
+  font-weight: 600;
+  background: #ffffff; 
+ 
+ 
 }
 
 /* BANNER */
@@ -70,11 +78,11 @@ a,a:hover, a:active, a:link{
     height: 50px;
     background: #ffffff;
     min-width: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
-.banner_categoria a{
+.banner_categoria p{
     display: block;
     color: #1e1e27;
     text-transform: uppercase;
@@ -85,10 +93,6 @@ a,a:hover, a:active, a:link{
     width: 100%;
 }
 
-
-.banner_categoria a:hover{
- color: #fe4c50; 
-}
 
 .mapa{
   margin-top: 100px;

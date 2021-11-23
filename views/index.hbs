@@ -1,7 +1,10 @@
 
       
-    <div id="home" class="row align-items-center hero">
-        <div class="col-lg-3 offset-lg-2">            
+    <div id="home" class="row align-items-center img-fluid hero">
+        <div class="col-6 col-lg-3 offset-lg-2">     
+        
+        </div>
+         <div class="col-6  texthero d-none d-md-block d-xl-block d-xxl-block">            
           
           <h1>DÍA DE LA MADRE</h1>
              <h4>Estilo único. En la cancha, en el gimnasio o en casa</h4>
@@ -68,24 +71,25 @@
 		<div class="banner">
 			<div class="container">
 				<div class="row">
+           <h2 class="text-uppercase mt-3 mb-3 text-center">¿A quién le quieres regalar?</h2>
 					<div class="col-md-4">
 						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_1.jpg);">
 							<div class="banner_categoria">
-								<a href="#">Mujer</a>
+								<p>Mujer</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_2.jpg);">
+						<div class="banner_item align-iteam-center img-fluid" style="background-image: url(images/infantil1.jpg);">
 							<div class="banner_categoria">
-								<a href="#">Accesorios</a>
+								<p>Infantil</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="banner_item align-iteam-center" style="background-image: url(images/banner_3.jpg);">
 							<div class="banner_categoria">
-								<a href="#">Hombre</a>
+								<p>Hombre</p>
 							</div>
 						</div>
 					</div>
@@ -137,7 +141,7 @@
                 <h1>{{titulo}}</h1>
                 <img src="{{imagen}}">
                 <h2>{{ subtitulo }}</h2>
-                <p>{{ cuerpo }}</p>
+                <p>${{ cuerpo }}</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Cerrar</button>
